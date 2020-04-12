@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-
+import { BrowserRouter as Route } from 'react-router-dom'
+import { ProductProvider } from './context'
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ProductProvider>
+      <Route>
+        <App />
+      </Route>
+    </ProductProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
