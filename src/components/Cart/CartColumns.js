@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function CartColumns() {
     return (
-        <div className="container-fluid mt-5 text-center">
+        <div className="container-fluid mt-5 text-center d-none d-lg-block">
             <div className="row">
                 <div className="col-2 text-uppercase mx-auto">
                     <p>Products</p>
